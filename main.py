@@ -38,7 +38,7 @@ bot = EchoBot()
 # Optionally add your Poe API key here. You can go to https://poe.com/create_bot?api=1 to generate
 # one. We strongly recommend adding this key for a production bot to prevent abuse,
 # but the starter example disables the key check for convenience.
-# POE_API_KEY = ""
-# app = make_app(bot, api_key=POE_API_KEY)
+POE_API_KEY = "ojD1K0AWfhtxzd5Hhtl4hXUmK0bZqQ2p"
+app = make_app(bot, api_key=POE_API_KEY)
 
-app = make_app(bot, allow_without_key=True)
+# app = make_app(bot, allow_without_key=True)
