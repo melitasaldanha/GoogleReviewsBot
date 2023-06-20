@@ -11,9 +11,10 @@ from catbot import CatBot
 from concurrent_battle import ConcurrentBattleBot
 from echobot import EchoBot
 from langcatbot import LangCatBot
+from google_reviews import GoogleReviewsBot
 
 # Echo bot is a very simple bot that just echoes back the user's last message.
-bot = EchoBot()
+# bot = EchoBot()
 
 # A sample bot that showcases the capabilities the protocol provides. Please see the
 # following link for the full set of available message commands:
@@ -35,10 +36,12 @@ bot = EchoBot()
 # Like BattleBot, but streams both responses at once.
 # bot = ConcurrentBattleBot()
 
+bot = GoogleReviewsBot()
+
 # Optionally add your Poe API key here. You can go to https://poe.com/create_bot?api=1 to generate
 # one. We strongly recommend adding this key for a production bot to prevent abuse,
 # but the starter example disables the key check for convenience.
-POE_API_KEY = "ojD1K0AWfhtxzd5Hhtl4hXUmK0bZqQ2p"
-app = make_app(bot, api_key=POE_API_KEY)
+# POE_API_KEY = "ojD1K0AWfhtxzd5Hhtl4hXUmK0bZqQ2p"
+# app = make_app(bot, api_key=POE_API_KEY)
 
-# app = make_app(bot, allow_without_key=True)
+app = make_app(bot, allow_without_key=True)
